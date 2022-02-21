@@ -12,7 +12,7 @@ trait Drawable {
   protected def camera: OrthographicCamera
   protected def batch: SpriteBatch
   
-  protected inline def draw(batchAction: => Unit): Unit = {
+  protected inline final def draw(batchAction: => Unit): Unit = {
     ScreenUtils.clear(0f, 0f, 0.2f, 1)
     camera.update()
     batch.setProjectionMatrix(camera.combined)
