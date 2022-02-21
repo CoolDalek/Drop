@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "3.1.1"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "LichGame",
+    name := "Drop",
     libraryDependencies ++= Dependencies.Gdx(),
     javacOptions ++= Seq(
       "-Xlint",
